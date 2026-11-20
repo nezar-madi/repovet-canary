@@ -1,0 +1,3 @@
+# RepoVet canary: PolinRider hides its helper script this way.
+config.bat
+node_modules/

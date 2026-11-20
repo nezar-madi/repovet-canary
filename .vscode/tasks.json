@@ -1,0 +1,12 @@
+{
+  // RepoVet canary: a task that runs when the folder is opened. It only prints text.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "repovet-canary",
+      "type": "shell",
+      "command": "echo RepoVet canary task - harmless",
+      "runOptions": { "runOn": "folderOpen" }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "repovet-canary-fixture",
+  "private": true,
+  "description": "RepoVet test fixture. DO NOT INSTALL: it names a package that was published to npm as malware.",
+  "scripts": {
+    "preinstall": "echo This is a RepoVet test fixture. Do not install it. && exit 1"
+  },
+  "dependencies": {
+    "tailwindcss-style-animate": "^1.1.6"
+  }
+}
