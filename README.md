@@ -16,7 +16,7 @@ that folder names a package that was really published to npm as malware.
 | File | RepoVet check | Expected finding |
 |---|---|---|
 | `src/canary.js` | Signatures | `repovet.canary`: RepoVet's own test marker (critical) |
-| `tailwind.config.js` | Obfuscation, entropy | code hidden after a run of spaces, `eval(`, a `child_process` import and a random base64 blob in a build config |
+| `tailwind.config.js` | Obfuscation, entropy | code hidden after a run of spaces, `eval(`, a detached hidden background process (`detached: true`, `.unref()`), and a random base64 blob in a build config. Each sits inside `if (false)` and can never run. |
 | `public/fonts/canary.woff2` | Fonts | a "font" that is really plain text (critical) |
 | `.vscode/tasks.json` | Auto-run | a task that runs when the folder is opened (it only echoes text) |
 | `fixtures/package.json` | Packages | depends on a known malicious npm package name (critical), plus an install hook |
